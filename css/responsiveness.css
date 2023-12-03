@@ -37,6 +37,8 @@
         height: 50vh;
         background-color: #E7E5D8;
         padding: 2rem 2rem;
+        gap: 1rem;
+        margin-bottom: 2%;
     }
 
     main .about .about--content {
@@ -44,35 +46,13 @@
     }
 
 
+
+
     /* ===============SLIDE */
     .slide__container .slide__container--img img {
         width: 15rem;
         height: 9rem;
     }
-
-    /* ==================REVIEW */
-    /* ==================REVIEW */
-
-    .review-container .review-container--box {
-
-        padding: 2%;
-        width: 30%;
-        height: 100%;
-        flex-shrink: 0;
-        background-color: #fff;
-        gap: 1rem;
-    }
-
-    .review-container .review-container--box p {
-        color: #000;
-        font-family: SF Pro Display;
-        font-size: .8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.03375rem;
-    }
-
 
 
     /* =========================Service */
@@ -190,6 +170,29 @@
     }
 
 
+    /* ==================REVIEW */
+    /* ==================REVIEW */
+
+    .review-container .review-container--box {
+
+        padding: 2%;
+        width: 30%;
+        height: 100%;
+        flex-shrink: 0;
+        background-color: #fff;
+        gap: 1rem;
+    }
+
+    .review-container .review-container--box p {
+        color: #000;
+        font-family: SF Pro Display;
+        font-size: .8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.03375rem;
+    }
+
 
     /* ===========================COLLAPS */
     .collaps {
@@ -224,6 +227,10 @@
     }
 
     /* =================FOOTER */
+    /* =================FOOTER */
+    /* =================FOOTER */
+    /* =================FOOTER */
+
     footer .footer-list {
         width: 70%;
         margin-right: auto;
@@ -243,10 +250,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================mobile */
 @media(max-width:480px) {
 
     header .hero h1 {
-        font-size: 1.5rem;
+        text-align: center;
+        font-size: 1.3rem;
         white-space: nowrap;
         flex-direction: column;
     }
@@ -260,15 +289,26 @@
 
     .hero .hero_container .hero_container--block1 {
         width: 100%;
+        height: 70vh;
 
     }
 
     .hero .hero_container .hero_container--block2 {
         width: 100%;
 
-
     }
 
+    /* ABOUT================= */
+    main .about {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        height: 50vh;
+        background-color: #E7E5D8;
+        padding: 2rem 2rem;
+        gap: 1rem;
+        margin-bottom: 15rem;
+    }
 
     /* ====================AWARD */
     .award__content {
@@ -407,9 +447,10 @@
         margin-bottom: 5rem;
     }
 
-    /* ====================================================GALLERY */
-    /* ====================================================GALLERY */
-    /* ====================================================GALLERY */
+    /* ====================================================GALLERY==section */
+    /* ====================================================GALLERY==section */
+    /* ====================================================GALLERY==section */
+    /* ====================================================GALLERY==section */
 
 
     main .gallery {
@@ -432,8 +473,6 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 1rem;
-
-
     }
 
     .gallery .gallery-content .gallery-typography1 {
@@ -444,9 +483,8 @@
 
     }
 
-    .gallery-typography1 p {
-
-        font-size: 1rem;
+    .gallery-content .gallery-typography1 p {
+        font-size: .8rem;
     }
 
     .gallery-typography1 .gallery-typography1-btn {
@@ -498,25 +536,7 @@
 
     }
 
-    /* 
-.africa-container:nth-child(3) {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 3;
 
-} */
-
-    /* .africa-container:nth-child(4) {
-    grid-column: 1/3;
-
-} */
-
-
-
-    /* .africa-container:nth-child(5) {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-} */
 
     /* Hover effect for the image */
     .africa-container:hover img {
@@ -584,5 +604,59 @@
         line-height: normal;
         letter-spacing: -0.09rem;
         padding-left: 5%;
+    }
+
+    /* ================================CONTACT RESPONSIVENESS */
+    /* ================================CONTACT RESPONSIVENESS */
+    /* ================================CONTACT RESPONSIVENESS */
+    main .contactme {
+        padding: 1rem 2rem;
+    }
+
+    main .contactme .contactme--container {}
+
+    .contactme--container .contactme--container-box {
+        width: 15%;
+        height: 10rem;
+        padding: 2.25rem 3.3125rem;
+        margin-left: 2%;
+
+    }
+
+    .contactme--container .contactme--container-box h4 {
+        font-size: .9rem;
+    }
+
+    .contactme--container .contactme--container-box p {
+        font-size: 10px;
+    }
+
+    main .contact-form {
+        width: 100%;
+        padding: 2%;
+        height: auto;
+    }
+
+    main .contact-form h2 {
+        font-size: 1rem;
+    }
+
+    main .contact-form form {
+        width: 100%;
+        padding: 10px 10px;
+        height: auto;
+    }
+
+    main .contact-form form textarea {
+        height: 15.625rem;
+    }
+
+    .contact-map__container .contact-map__container-map {
+        height: 15rem;
+    }
+
+    .contact-map-social .contact-map-social-img img {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }

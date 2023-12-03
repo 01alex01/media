@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'Bricolage Grotesque', sans-serif;
     /* font-family: 'Outfit', sans-serif; */
+    background-color: #E7E5D8;
 }
 
 
@@ -240,6 +241,10 @@ header {
     .navbar-container input[type="checkbox"]:checked~.logo {
         display: none;
     }
+
+    .logo {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -371,8 +376,8 @@ header {
 }
 
 hr {
-    width: 80.0625rem;
-    height: 0.09375rem;
+    width: 70.0625rem;
+    height: 0.19375rem;
     background: #00010e;
 }
 
@@ -436,7 +441,7 @@ hr {
     position: absolute;
     top: 0;
     background: #E7E5D8;
-    width: 250px;
+    width: 10%;
     height: 100%;
     z-index: 2;
 }
@@ -752,7 +757,7 @@ hr {
 
 .review-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -763,7 +768,7 @@ hr {
     align-items: center;
     padding: 2%;
     width: 23.25rem;
-    height: 100%;
+    height: 70vh;
     flex-shrink: 0;
     background-color: #fff;
     gap: 1rem;
@@ -772,6 +777,7 @@ hr {
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    margin: 1%;
 }
 
 .review-container--box-img img {
@@ -816,17 +822,18 @@ hr {
 .collaps {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: auto;
+    height: 90%;
     gap: 1rem;
     padding: 5%;
     margin-bottom: 5rem;
+    background-color: #E7E5D8;
 }
 
 .collaps1 {
     width: 50%;
-    height: 100vh;
-
+    height: 100%;
 }
 
 .collaps1 h1 {
@@ -841,7 +848,8 @@ hr {
 }
 
 .collapsible {
-    width: 100%;
+    width: 90%;
+    margin-bottom: -3rem;
     font-weight: 400;
 
 }
@@ -935,7 +943,7 @@ hr {
 
 .collaps-img img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
 
 }
@@ -948,8 +956,9 @@ footer {
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 2%;
+    padding: 5%;
     background-color: #E5AA70;
+    overflow: hidden;
 }
 
 .footer-logo {
@@ -1293,4 +1302,264 @@ footer {
     line-height: normal;
     letter-spacing: -0.09rem;
     padding-left: 5%;
+}
+
+
+
+/* =============================================================CONTACT */
+/* =============================================================CONTACT */
+/* =============================================================CONTACT */
+/* =============================================================CONTACT */
+/* =============================================================CONTACT */
+.hero-contact {
+    padding: 5%;
+    background-color: #E7E5D8;
+}
+
+.hero-contact img {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.contactme {
+    display: flex;
+    width: 100%;
+    padding: 2.875rem 16.125rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.3125rem;
+    background: #E5AA70;
+    height: 100%;
+}
+
+.contactme h2 {
+    white-space: nowrap;
+}
+
+.contactme--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.contactme--container-box {
+    display: flex;
+    width: 30%;
+    height: 15rem;
+    padding: 4.25rem 5.3125rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8125rem;
+    border-radius: 0.75rem;
+    background: #F4F4F4;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+    margin: 2%;
+    text-align: center;
+}
+
+.contactme--container-box:nth-child(2) {}
+
+.contactme--container-box h4 {
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.045rem;
+}
+
+.contactme--container-box p {
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.03375rem;
+    white-space: nowrap;
+}
+
+.contactme--container-box .fa-solid {
+    font-size: 1.5rem;
+}
+
+/* =======================================contact form  */
+/* =======================================contact form  */
+/* =======================================contact form  */
+/* =======================================contact form  */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+    padding: 2%;
+}
+
+.contact-form h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.06rem;
+    white-space: nowrap;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 80.5%;
+    height: 51rem;
+    flex-shrink: 0;
+    background-color: #E7E5D8;
+    gap: 1rem;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 0.75rem;
+
+}
+
+.contact-form form input {
+    border: none;
+    width: 100%;
+    height: 4.25rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: #F4F4F4;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.15);
+    padding: 2%;
+}
+
+.contact-form form input:focus {
+    border: 4px solid #e5aa704f;
+    outline: none;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    height: 26.625rem;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 0.75rem;
+    background: #F4F4F4;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.15);
+    /* resize: none; */
+    padding: 2%;
+}
+
+.contact-form form textarea:focus {
+    border: 4px solid #e5aa704f;
+    outline: none;
+
+}
+
+::placeholder {
+
+    padding: 2%;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+}
+
+.contact-form form button {
+    display: inline-flex;
+    padding: 0.625rem 1.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.75rem;
+    background: #593E24;
+    box-shadow: 0px 0px 8px 0px rgba(89, 62, 36, 0.60);
+    border: none;
+    color: #E7E5D8;
+    cursor: pointer;
+}
+
+/* =========================================CONTACT MAP */
+/* =========================================CONTACT MAP */
+/* =========================================CONTACT MAP */
+.contact-map {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+
+}
+
+.contact-map__container {
+    width: 100%;
+    height: auto;
+    background-color: #E5AA70;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+
+}
+
+.contact-map__container-map {
+    width: 100%;
+    height: 25.875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-map__container-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.contact-map-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-map-social h1 {
+    color: #000;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.06rem;
+}
+
+.contact-map-social-img img {
+    width: 5.5625rem;
+    height: 5.5625rem;
+    object-fit: cover;
+    cursor: pointer;
 }
