@@ -1,4 +1,4 @@
-@media (max-width:834px) {
+@media (max-width:899px) {
     body header {
         padding: 0 0rem;
     }
@@ -271,8 +271,9 @@
 
 
 /* ===============================================mobile */
+/* ===============================================mobile */
+/* ===============================================mobile */
 @media(max-width:480px) {
-
     header .hero h1 {
         text-align: center;
         font-size: 1.3rem;

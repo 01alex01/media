@@ -60,7 +60,8 @@
                     <a class="hero_container--a" href="#">Hire me</a>
                 </div>
                 <div class="hero_container--block2">
-                    <img src="./image/hero.png" alt="hero image">
+                    <img id="hero" src="./image/hero.png" alt="Hero Image">
+
                 </div>
             </div>
             <hr>
@@ -460,6 +461,21 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            let image = document.getElementById("hero");
+            let images = ["hero1.png", "hero2.png"];
+            let index = 0;
+
+            setInterval(function () {
+                image.src = "./image/" + images[index]; // Add the correct path to the images
+                index = (index + 1) % images.length;
+            }, 2000);
+        });
+    </script>
+
+
+
 
 </body>
 
