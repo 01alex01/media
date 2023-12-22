@@ -467,11 +467,25 @@
             let images = ["hero1.png", "hero2.png"];
             let index = 0;
 
+            function fadeIn() {
+                image.style.opacity = 1; // Set opacity to 1 for fade-in effect
+            }
+
+            function fadeOut() {
+                image.style.opacity = 0; // Set opacity to 0 for fade-out effect
+            }
+
             setInterval(function () {
-                image.src = "./image/" + images[index]; // Add the correct path to the images
-                index = (index + 1) % images.length;
-            }, 2000);
+                fadeOut(); // Trigger fade-out effect
+
+                setTimeout(function () {
+                    image.src = "./image/" + images[index]; // Change the image source
+                    index = (index + 1) % images.length;
+                    fadeIn(); // Trigger fade-in effect
+                }, 500); // Adjust the delay to match the transition duration
+            }, 3000);
         });
+
     </script>
 
 
