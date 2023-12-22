@@ -410,7 +410,7 @@ hr {
     display: flex;
     text-align: left;
     flex-direction: row;
-    height: 40vh;
+    height: 100%;
     background-color: #E7E5D8;
     padding: 2rem 4rem;
 }
@@ -1580,9 +1580,15 @@ footer {
     letter-spacing: -0.06rem;
 }
 
+.contact-map-social-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-map-social-img img {
-    width: 5.5625rem;
-    height: 5.5625rem;
+    width: 4.5625rem;
+    height: 4.5625rem;
     object-fit: cover;
     cursor: pointer;
 }
